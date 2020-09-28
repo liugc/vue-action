@@ -32,7 +32,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           npm i
-          npm run dev
+          npm run serve
       
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
