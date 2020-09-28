@@ -33,6 +33,7 @@ jobs:
         run: |
           npm i
           npm run build
+          mkdir /tar
           tar cvf /tar/dist.tar /dist
       
       - name: Upload Packages
