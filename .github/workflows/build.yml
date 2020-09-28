@@ -33,11 +33,11 @@ jobs:
         run: |
           npm i
           npm run build
-          mkdir /tar
-          tar cvf /tar/dist.tar /dist
+          mkdir tar
+          tar cvf tar/dist.tar dist
       
       - name: Upload Packages
         uses: actions/upload-artifact@master
         with:
           name: dist
-          path: /tar
+          path: tar
